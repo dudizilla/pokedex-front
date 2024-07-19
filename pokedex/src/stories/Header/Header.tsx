@@ -8,8 +8,7 @@ import Image from 'next/image';
 
 export interface HeaderProps {
   size: 'small' | 'medium' | 'large';
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  onClick?: (button: any) => void;
+  onClick?: (values: string) => void;
   values: string[];
   searchTerm: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
