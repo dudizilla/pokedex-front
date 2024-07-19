@@ -15,7 +15,7 @@ export const Page = ({size = "medium", number, pokemon, types, image}: PageProps
 
   return (
     <div className='full-page'>
-      <Header size={size} />
+      <Header size={size} values={[]} searchTerm={(event: React.ChangeEvent<HTMLInputElement>) => {}} />
       <div className="cards-container">
         <PokemonCard size={size} number={number} pokemon={pokemon} types={types} image={image} />
       </div>
