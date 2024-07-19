@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  height: fit-content;
+  background-color: #DC0A2D;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  box-sizing:border-box;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-container--small {
+  width: 350px;
+}
+
+.filter-container--medium {
+  width: 430px;
+}
+
+.filter-container--large {
+  width: 500px;
+}
+
+.filter-button-container {
+  display: flex;
+}
