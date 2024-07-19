@@ -21,6 +21,7 @@ export const Small: Story = {
     number: 1,
     pokemon: 'Bulbasaur',
     types: ['grass', 'poison'],
+    image: 'https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/001.png',
   },
 };
 
@@ -30,6 +31,7 @@ export const Medium: Story = {
     number: 1,
     pokemon: 'Bulbasaur',
     types: ['grass', 'poison'],
+    image: 'https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/001.png',
   },
 };
 
@@ -39,5 +41,6 @@ export const Large: Story = {
     number: 1,
     pokemon: 'Bulbasaur',
     types: ['grass', 'poison'],
+    image: 'https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/001.png',
   },
 };

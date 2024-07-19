@@ -17,6 +17,7 @@ export const Small: Story = {
     args: {
       size: 'small',
       placeholder: 'Search',
+      onChange: (event: React.ChangeEvent<HTMLInputElement>) => {},
     },
   };
 
@@ -24,6 +25,7 @@ export const Medium: Story = {
   args: {
     size: 'medium',
     placeholder: 'Search',
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => {},
   },
 };
 
@@ -31,5 +33,6 @@ export const Large: Story = {
     args: {
       size: 'large',
       placeholder: 'Search',
+      onChange: (event: React.ChangeEvent<HTMLInputElement>) => {},
     },
   };
