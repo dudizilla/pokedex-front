@@ -17,7 +17,7 @@ export const Small: Story = {
   args: {
     size: 'small',
     values: [],
-    searchTerm: (event: ChangeEvent<HTMLInputElement>) => {},
+    searchTerm: (event: React.ChangeEvent<HTMLInputElement>) => {},
   },
 };
 
@@ -25,7 +25,7 @@ export const Medium: Story = {
   args: {
     size: 'medium',
     values: [],
-    searchTerm: (event: ChangeEvent<HTMLInputElement>) => {},
+    searchTerm: (event: React.ChangeEvent<HTMLInputElement>) => {},
   }
 };
 
@@ -33,6 +33,6 @@ export const Large: Story = {
   args: {
     size: 'large',
     values: [],
-    searchTerm: (event: ChangeEvent<HTMLInputElement>) => {},
+    searchTerm: (event: React.ChangeEvent<HTMLInputElement>) => {},
   }
 };
