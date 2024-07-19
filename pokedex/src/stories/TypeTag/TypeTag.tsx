@@ -4,17 +4,16 @@ import './type-tag.css';
 export interface TypeTagProps {
   type: string;
   label: string;
+  size: 'small' | 'medium' | 'large';
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const TypeTag = ({
   type,
   label,
+  size = 'large',
 }: TypeTagProps) => {
   return (
-    <div className={['tag', `tag--${type}`].join(' ')}>
+    <div className={['tag', `tag--${type.toLocaleLowerCase()}`, `tag--${size}`].join(' ')}>
       <p className='text'>{label}</p>
     </div>
   );

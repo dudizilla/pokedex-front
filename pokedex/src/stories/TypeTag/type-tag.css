@@ -1,8 +1,6 @@
 .tag {
   border-radius: 100px;
-  padding: 8px 12px;
   background-color: #666666;
-  font-weight: 700;
 }
 
 .text {
@@ -10,8 +8,24 @@
   margin: 0;
 }
 
+.tag--small {
+  padding: 10px 20px;
+  margin-top: 4px;
+}
+
+.tag--medium {
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tag--large {
+  padding: 6px 12px;
+  font-weight: 700;
+}
+
 .tag--normal {
-  background-color: #AAA67F;
+  background-color: #625f46;
 }
 
 .tag--fighting {
@@ -19,11 +33,11 @@
 }
 
 .tag--flying {
-  background-color: #A891EC;
+  background-color: #6c41ed;
 }
 
 .tag--ground {
-  background-color: #DEC16B;
+  background-color: #876600;
 }
 
 .tag--poison {
@@ -31,11 +45,11 @@
 }
 
 .tag--rock {
-  background-color: #B69E31;
+  background-color: #866e00;
 }
 
 .tag--bug {
-  background-color: #A7B723;
+  background-color: #657100;
 }
 
 .tag--ghost {
@@ -43,19 +57,19 @@
 }
 
 .tag--steel {
-  background-color: #B7B9D0;
+  background-color: #6b6c79;
 }
 
 .tag--fire {
-  background-color: #F57D31;
+  background-color: #c44c01;
 }
 
 .tag--water {
-  background-color: #6493EB;
+  background-color: #004ad3;
 }
 
 .tag--grass {
-  background-color: #74CB48;
+  background-color: #267100;
 }
 
 .tag--electric {
@@ -67,7 +81,7 @@
 }
 
 .tag--ice {
-  background-color: #9AD6DF;
+  background-color: #007183;
 }
 
 .tag--dragon {
@@ -79,5 +93,5 @@
 }
 
 .tag--fairy {
-  background-color: #E69EAC;
+  background-color: #9a3a4d;
 }
