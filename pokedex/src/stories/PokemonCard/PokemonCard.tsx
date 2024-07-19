@@ -1,32 +1,39 @@
 import React from 'react';
 import './pokemon-card.css';
-import Image from 'next/image';
-import bulbasaur from './001.png';
+import { TypeTag } from '../TypeTag/TypeTag';
 
 export interface PokemonCardProps {
-  backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';
   pokemon: string;
-  number: string;
+  number: number;
   onClick?: () => void;
+  types: string[];
+  image: string;
 }
 
 export const PokemonCard = ({
   size = 'medium',
-  backgroundColor,
   pokemon,
   number,
-  ...props
+  types,
+  image,
 }: PokemonCardProps) => {
   return (
-    <div className={['card', `card--${size}`]. join(' ')}>
-      <p className='pokemon-number'>#{number}</p>
-      <Image src={bulbasaur} alt={pokemon} width={100} height={100} className={`pokemon-image--${size}`} />
+    <div className={['card', `card--${size}`].join(' ')}>
+      <p className='pokemon-number'>#{number.toString().padStart(3, '0')}</p>
+      <img src={image} className={['pokemon-image', `pokemon-image--${size}`].join(' ')} />
       <div className='label'>
         <p className='label-text'>
           {pokemon}
         </p>
+        <div className='types-container'>
+        {types.map((type) => (
+          <TypeTag key={type} type={type} label={size === "small" ? "" : type} size={size} />
+        ))}
+        </div>
       </div>
+      
+       
     </div>
   );
 };
