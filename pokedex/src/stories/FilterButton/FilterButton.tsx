@@ -3,7 +3,6 @@ import './filter-button.css';
 
 export interface FilterButtonProps {
   size: 'small' | 'medium' | 'large';
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onClick?: (values: string) => void;
   values: string[];
 }
