@@ -2,7 +2,7 @@ import axios from "axios";
 
 const createAxiosInstance = (baseURL = process.env.BASE_URL) => {
   const instance = axios.create({
-    timeout: 1000,
+    timeout: 10000,
     baseURL,
   });
   return instance;
