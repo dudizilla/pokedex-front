@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Header } from './Header';
+import { fn } from '@storybook/test';
 
 const meta = {
   title: 'Page/Header',
@@ -17,7 +18,7 @@ export const Small: Story = {
   args: {
     size: 'small',
     values: [],
-    searchTerm: (event: React.ChangeEvent<HTMLInputElement>) => {},
+    searchTerm: fn(),
   },
 };
 
@@ -25,7 +26,7 @@ export const Medium: Story = {
   args: {
     size: 'medium',
     values: [],
-    searchTerm: (event: React.ChangeEvent<HTMLInputElement>) => {},
+    searchTerm: fn(),
   }
 };
 
@@ -33,6 +34,6 @@ export const Large: Story = {
   args: {
     size: 'large',
     values: [],
-    searchTerm: (event: React.ChangeEvent<HTMLInputElement>) => {},
+    searchTerm: fn(),
   }
 };

@@ -1,0 +1,34 @@
+body {
+  background-color: #DC0A2D;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+:root {
+  --base-type: #666666;
+  --normal-type: #AAA67F;
+  --fighting-type: #C12239;
+  --flying-type: #A891EC;
+  --ground-type: #DEC16B;
+  --poison-type: #A43E9E;
+  --rock-type: #B69E31;
+  --bug-type: #A7B723;
+  --ghost-type: #70559B;
+  --steel-type: #B7B9D0;
+  --fire-type: #F57D31;
+  --water-type: #6493EB;
+  --grass-type: #74CB48;
+  --electric-type: #F9CF30;
+  --psychic-type: #FB5584;
+  --ice-type: #9AD6DF;
+  --dragon-type: #7037FF;
+  --dark-type: #75574C;
+  --fairy-type: #E69EAC;
+
+  --white: #fff;
+  --primary: #DC0A2D;
+}

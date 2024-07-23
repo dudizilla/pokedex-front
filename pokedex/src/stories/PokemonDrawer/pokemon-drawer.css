@@ -1,0 +1,234 @@
+.drawer-container {
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 550px;
+    z-index: 5;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: none;
+    position: absolute;
+    z-index: 3;
+}
+
+.pokemon-drawer-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.image-types-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.types-drawer-container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 16px auto;
+}
+
+
+.id-pokemon {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon-id-name {
+    color: var(--white);
+}
+
+.about-pokemon {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.bar {
+    width: 100%;
+    height: 8px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 4;
+}
+
+.white-background {
+    background-color: var(--white);
+    position: absolute;
+    top: 330px;
+    left: 12px;
+    width: 95%;
+    height: 1000px;
+    border-radius: 16px;
+}
+
+.drawer-container--normal {
+    background-color: var(--normal-type);
+  }
+  
+  .drawer-container--fighting {
+    background-color: var(--fighting-type);
+  }
+  
+  .drawer-container--flying {
+    background-color: var(--flying-type);
+  }
+  
+  .drawer-container--ground {
+    background-color: var(--ground-type);
+  }
+  
+  .drawer-container--poison {
+    background-color: var(--poison-type);
+  }
+  
+  .drawer-container--rock {
+    background-color: var(--rock-type);
+  }
+  
+  .drawer-container--bug {
+    background-color: var(--bug-type);
+  }
+  
+  .drawer-container--ghost {
+    background-color: var(--ghost-type);
+  }
+  
+  .drawer-container--steel {
+    background-color: var(--steel-type);
+  }
+  
+  .drawer-container--fire {
+    background-color: var(--fire-type);
+  }
+  
+  .drawer-container--water {
+    background-color: var(--water-type);
+  }
+  
+  .drawer-container--grass {
+    background-color: var(--grass-type);
+  }
+  
+  .drawer-container--electric {
+    background-color: var(--electric-type);
+  }
+  
+  .drawer-container--psychic {
+    background-color: var(--psychic-type);
+  }
+  
+  .drawer-container--ice {
+    background-color: var(--ice-type);
+  }
+  
+  .drawer-container--dragon {
+    background-color: var(--dragon-type);
+  }
+  
+  .drawer-container--dark {
+    background-color: var(--dark-type);
+  }
+  
+  .drawer-container--fairy {
+    background-color: var(--fairy-type);
+  }
+
+  .bar--normal {
+    background-color: var(--normal-type);
+  }
+  
+  .bar--fighting {
+    background-color: var(--fighting-type);
+  }
+  
+  .bar--flying {
+    background-color: var(--flying-type);
+  }
+  
+  .bar--ground {
+    background-color: var(--ground-type);
+  }
+  
+  .bar--poison {
+    background-color: var(--poison-type);
+  }
+  
+  .bar--rock {
+    background-color: var(--rock-type);
+  }
+  
+  .bar--bug {
+    background-color: var(--bug-type);
+  }
+  
+  .bar--ghost {
+    background-color: var(--ghost-type);
+  }
+  
+  .bar--steel {
+    background-color: var(--steel-type);
+  }
+  
+  .bar--fire {
+    background-color: var(--fire-type);
+  }
+  
+  .bar--water {
+    background-color: var(--water-type);
+  }
+  
+  .bar--grass {
+    background-color: var(--grass-type);
+  }
+  
+  .bar--electric {
+    background-color: var(--electric-type);
+  }
+  
+  .bar--psychic {
+    background-color: var(--psychic-type);
+  }
+  
+  .bar--ice {
+    background-color: var(--ice-type);
+  }
+  
+  .bar--dragon {
+    background-color: var(--dragon-type);
+  }
+  
+  .bar--dark {
+    background-color: var(--dark-type);
+  }
+  
+  .bar--fairy {
+    background-color: var(--fairy-type);
+  }

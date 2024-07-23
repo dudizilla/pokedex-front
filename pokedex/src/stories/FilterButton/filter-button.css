@@ -48,7 +48,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
+    background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0px 0px 8px 0px rgba(138,138,138,0.5);
     z-index: 2;

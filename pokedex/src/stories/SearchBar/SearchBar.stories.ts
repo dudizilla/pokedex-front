@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { SearchBar } from './SearchBar';
+import { fn } from '@storybook/test';
 
 const meta = {
   title: 'Components/Search Bar',
@@ -17,7 +18,7 @@ export const Small: Story = {
     args: {
       size: 'small',
       placeholder: 'Search',
-      onChange: (event: React.ChangeEvent<HTMLInputElement>) => {},
+      onChange: fn(),
     },
   };
 
@@ -25,7 +26,7 @@ export const Medium: Story = {
   args: {
     size: 'medium',
     placeholder: 'Search',
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => {},
+    onChange: fn(),
   },
 };
 
@@ -33,6 +34,6 @@ export const Large: Story = {
     args: {
       size: 'large',
       placeholder: 'Search',
-      onChange: (event: React.ChangeEvent<HTMLInputElement>) => {},
+      onChange: fn(),
     },
   };

@@ -1,11 +1,12 @@
 'use client';
 import React from "react";
-import { Nunito } from "next/font/google";
+
 import getAllPokemons from '@/services/getAllPokemons';
 import { useEffect, useState } from "react";
 import { PokemonCard } from "@/stories/PokemonCard/PokemonCard";
 import { Header } from "@/stories/Header/Header";
 import './page.css'
+import { PokemonDrawer } from "@/stories/PokemonDrawer/PokemonDrawer";
 
 type Pokemon = {
   id: number;
@@ -15,20 +16,15 @@ type Pokemon = {
     attack: number;
     defense: number;
     hp: number;
-    spAttack: number;
-    spDefense: number;
+    sp_attack: number;
+    sp_defense: number;
     speed: number;
   };
   image: string;
   ability: string[];
 };
 
-const nunito = Nunito({
-  weight: "400",
-  style: "normal",
-  display: "swap",
-  subsets: ["latin"],
-});
+
 
 const values = [
   'Lowest Number',
@@ -40,6 +36,7 @@ const values = [
 export default function Home() {
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [openDrawer, setOpenDrawer] = useState<Pokemon>();
 
   const filterButton = (filterValue: string) => {
     const sortedPokemons = [...pokemons];
@@ -79,14 +76,21 @@ export default function Home() {
     return pokemon.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
+  const handleDrawer = (id: number) => {
+    setOpenDrawer(pokemons.find(pokemon => pokemon.id === id));
+  }
+
   return (
-    <div style={{ fontFamily: nunito.style.fontFamily }} className="full-page">
+    <>
       <Header size="large" onClick={filterButton} values={values} searchTerm={handleSearch}/>
       <div className="cards-container">
         {filteredPokemons.map((pokemon, index) => (
-          <PokemonCard key={index} pokemon={pokemon.name} size="large" types={pokemon.type} number={pokemon.id} image={pokemon.image} />
+          <PokemonCard onClick={() => handleDrawer(pokemon.id)} key={index} pokemon={pokemon.name} size="large" types={pokemon.type} number={pokemon.id} image={pokemon.image} />
         ))}
       </div>
-    </div>
+      {openDrawer && (
+        <PokemonDrawer name={openDrawer.name} number={openDrawer.id} types={openDrawer.type} image={openDrawer.image} abilities={openDrawer.ability} base={openDrawer.base} onClick={() => setOpenDrawer(undefined)} />
+      )}
+    </>
   );
 }

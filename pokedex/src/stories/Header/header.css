@@ -1,11 +1,14 @@
 .header {
   width: 100%;
   height: fit-content;
-  background-color: #DC0A2D;
+  background-color: var(--primary);
   display: flex;
   padding: 24px;
   justify-content: space-between;
   box-sizing:border-box;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .filter-container {
